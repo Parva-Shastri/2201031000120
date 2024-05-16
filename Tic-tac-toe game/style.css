@@ -5,6 +5,7 @@
     gap: 10px;
     max-width: 300px;
     margin: 20px auto;
+    border: 1px solid #000;
 }
 
 /* Scoreboard styling */
@@ -24,10 +25,23 @@ button {
     display: block;
     margin: 10px auto;
     padding: 10px 20px;
-    background-color: #000;
+    background-color: #000; /* Updated to include styles for both buttons */
     color: #fff;
     border: none;
     cursor: pointer;
+}
+
+/* Specific styling for the "Play Now" button */
+#playNow {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Specific styling for the "Invite Friend" button */
+#inviteFriend {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000; /* Updated to set the background color to #fff, text color to #000, and border to 1px solid #000 */
 }
 
 button:hover {
@@ -43,4 +57,11 @@ body {
 
 h1 {
     text-align: center;
+}
+
+/* Design the board with square cells */
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000; /* Added border to each of the input boxes inside */
 }

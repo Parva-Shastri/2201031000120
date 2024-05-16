@@ -23,6 +23,9 @@ function initializeGame() {
         gameBoardElement.innerHTML += `<div class="cell" data-cell-index="${index}">${cell}</div>`;
     });
     turnIndicatorElement.textContent = `${currentPlayer}'s Turn`;
+    // Toggle game board and score board visibility
+    gameBoardElement.style.display = 'none';
+    playerScoreElement.parentElement.style.display = 'none';
 }
 
 // Function to handle cell click
@@ -120,7 +123,11 @@ function resetGame() {
 
 // Event listeners
 gameBoardElement.addEventListener('click', handleCellClick);
-playNowButton.addEventListener('click', initializeGame);
+playNowButton.addEventListener('click', () => {
+    // Toggle game board and score board visibility on play now button click
+    gameBoardElement.style.display = 'block';
+    playerScoreElement.parentElement.style.display = 'block';
+});
 inviteFriendButton.addEventListener('click', () => {
     // Implement invite via email functionality
 });

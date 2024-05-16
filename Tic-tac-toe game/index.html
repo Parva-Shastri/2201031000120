@@ -8,13 +8,24 @@
 </head>
 <body>
     <h1>Tic-tac-toe Game</h1>
-    <div id="gameBoard"></div>
-    <div id="scoreBoard">
+    <div id="gameBoard" style="display: none; width: 30vw; height: 30vh;">
+        <!-- Game board cells -->
+        <div class="cell" onclick="makeMove(this, 0)"></div>
+        <div class="cell" onclick="makeMove(this, 1)"></div>
+        <div class="cell" onclick="makeMove(this, 2)"></div>
+        <div class="cell" onclick="makeMove(this, 3)"></div>
+        <div class="cell" onclick="makeMove(this, 4)"></div>
+        <div class="cell" onclick="makeMove(this, 5)"></div>
+        <div class="cell" onclick="makeMove(this, 6)"></div>
+        <div class="cell" onclick="makeMove(this, 7)"></div>
+        <div class="cell" onclick="makeMove(this, 8)"></div>
+    </div>
+    <div id="scoreBoard" style="display: none;">
         <p>Player: <span id="playerScore">0</span></p>
         <p>AI/Player 2: <span id="aiScore">0</span></p>
     </div>
     <div id="turnIndicator">Player's Turn</div>
-    <button id="playNow">Play Now</button>
+    <button id="playNow" onclick="document.getElementById('gameBoard').style.display='block'; document.getElementById('scoreBoard').style.display='block';">Play Now</button>
     <button id="inviteFriend">Invite Friend</button>
     <script src="script.js"></script>
 </body>
