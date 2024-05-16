@@ -1,0 +1,46 @@
+/* Main game board styling */
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+/* Scoreboard styling */
+#scoreBoard {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Turn indicator styling */
+#turnIndicator {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Buttons styling */
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Monochrome theme for a pleasant user experience */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+}
